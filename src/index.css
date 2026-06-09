@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Global focus ring — WCAG 2.4.7 */
+:focus-visible {
+  outline: 2px solid #FF1493;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respect reduced-motion preferences — WCAG 2.3.3 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@theme {
+  /* Warm, neutral-dark base surfaces */
+  --color-bg-dark: #121110;        /* Deep, rich espresso-charcoal base */
+  --color-surface-dark: #1C1A18;   /* Lighter warm stone for cards */
+  --color-surface-hover: #262320;  /* Elevated warm accent surface */
+  
+  /* Super clean typography hierarchy */
+  --color-text-primary: #F4F3F1;   /* Off-white warm cream for readability */
+  --color-text-secondary: #A39E99; /* Muted stone-taupe for metadata */
+  --color-warm-border: #2D2A26;    /* Soft, low-contrast inner lines */
+
+  /* High-fidelity surgical accents */
+  --color-neon-pink: #FF1493;      /* Deep electric pink */
+  --color-neon-green: #00FF66;     /* Electric spring green */
+}
