@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import DesignCarousel from './DesignCarousel';
 
 const projects = [
-  { id: 'nextscript',    category: 'Engineering' },
-  { id: 'microlearning', category: 'Engineering' },
-  { id: 'lms',           category: 'Engineering' },
-  { id: 'brand-identity', category: 'Design' },
+  { id: 'nextscript',       category: 'Engineering' },
+  { id: 'microlearning',    category: 'Engineering' },
+  { id: 'lms',              category: 'Engineering' },
+  { id: 'design-carousel',  category: 'Design' },
 ];
 
 const concepts = [
@@ -229,6 +230,9 @@ export default function Projects() {
 
         </div>
       )}
+
+      {show('design-carousel') && <DesignCarousel />}
+
     </section>
   );
 }
