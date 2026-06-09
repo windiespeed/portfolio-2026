@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Projects from './Projects';
 import Footer from './Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   return (
