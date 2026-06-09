@@ -69,7 +69,7 @@ export default function DesignCarousel() {
       <div className="flex items-end justify-between mb-8">
         <div className="flex flex-col">
           <span aria-hidden="true" className="text-text-secondary font-mono text-sm tracking-wide uppercase mb-2">// Visual Work</span>
-          <h3 className="text-3xl font-bold tracking-tight">Graphic Design</h3>
+          <h3 className="text-3xl font-bold tracking-tight">Design</h3>
         </div>
         <div className="flex gap-3" role="group" aria-label="Carousel navigation">
           <button

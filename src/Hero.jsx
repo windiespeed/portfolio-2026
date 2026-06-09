@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="pt-16 pb-20 md:pt-36 md:pb-44 flex flex-col justify-center max-w-4xl relative z-10">
+    <section className="pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center max-w-4xl relative z-10">
       <p className="text-neon-pink font-mono text-sm tracking-wide uppercase mb-4 font-semibold animate-pulse">
         <span aria-hidden="true">// </span>Available for Remote Roles
       </p>
