@@ -75,6 +75,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <Analytics />
 
     </div>
   );
