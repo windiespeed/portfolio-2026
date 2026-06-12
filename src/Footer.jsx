@@ -17,7 +17,11 @@ export default function Footer() {
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 flex flex-wrap justify-between items-center gap-2 text-xs font-mono text-text-secondary/80">
         <span>© {new Date().getFullYear()} Windie Victoria LLC. All rights reserved.</span>
-        <span className="text-neon-pink/60">Type-Safe and Responsive</span>
+        <span className="text-neon-pink/60 flex flex-wrap gap-x-2 gap-y-1 justify-center md:justify-end">
+          <a href="mailto:windiespeed@gmail.com" className="hover:text-neon-pink transition-colors">windiespeed@gmail.com</a>
+          <span aria-hidden="true">|</span>
+          <a href="tel:+16015751317" className="hover:text-neon-pink transition-colors">601.575.1317</a>
+        </span>
       </div>
     </footer>
   );
