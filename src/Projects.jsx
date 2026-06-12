@@ -39,7 +39,7 @@ export default function Projects() {
     <section id="projects" className="py-12 scroll-mt-24">
       <div className="flex flex-col mb-8">
         <span aria-hidden="true" className="text-text-secondary font-mono text-sm tracking-wide uppercase mb-2">// Featured Architecture</span>
-        <h2 className="text-3xl font-bold tracking-tight">Case Studies</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
       </div>
 
       {/* Category filter */}
