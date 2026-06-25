@@ -39,7 +39,7 @@ export default function Projects() {
     <section id="projects" className="py-12 scroll-mt-24">
       <div className="flex flex-col mb-8">
         <span aria-hidden="true" className="text-text-secondary font-mono text-sm tracking-wide uppercase mb-2">// Featured Architecture</span>
-        <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
       </div>
 
       {/* Category filter */}
@@ -92,28 +92,40 @@ export default function Projects() {
               </ul>
             </div>
 
-            <div
-              role="img"
-              aria-label="NeXTScript architecture overview: identity tier via Google SSO, content tier via Firebase, AI orchestration via Anthropic SDK"
-              className="lg:col-span-5 bg-bg-dark border border-warm-border rounded-xl p-6 h-64 flex flex-col justify-between font-mono text-xs text-text-secondary group-hover:border-warm-border/90 transition-colors"
-            >
-              <div aria-hidden="true" className="flex justify-between items-center border-b border-warm-border pb-3">
-                <span className="text-neon-pink">nextscript_architecture.json</span>
-                <div className="flex gap-1">
-                  <div className="w-2 h-2 rounded-full bg-warm-border" />
-                  <div className="w-2 h-2 rounded-full bg-warm-border" />
+            <div className="lg:col-span-5 flex flex-col gap-4">
+              <div
+                role="img"
+                aria-label="NeXTScript architecture overview: identity tier via Google SSO, content tier via Firebase, AI orchestration via Anthropic SDK"
+                className="bg-bg-dark border border-warm-border rounded-xl p-6 h-64 flex flex-col justify-between font-mono text-xs text-text-secondary group-hover:border-warm-border/90 transition-colors"
+              >
+                <div aria-hidden="true" className="flex justify-between items-center border-b border-warm-border pb-3">
+                  <span className="text-neon-pink">nextscript_architecture.json</span>
+                  <div className="flex gap-1">
+                    <div className="w-2 h-2 rounded-full bg-warm-border" />
+                    <div className="w-2 h-2 rounded-full bg-warm-border" />
+                  </div>
+                </div>
+                <div aria-hidden="true" className="space-y-2 grow pt-4">
+                  <p className="text-text-primary/40">{"{"}</p>
+                  <p className="pl-4"><span className="text-neon-green">"identity_tier"</span>: "Google SSO via NextAuth",</p>
+                  <p className="pl-4"><span className="text-neon-green">"content_tier"</span>: "Isolated Cloud Firebase",</p>
+                  <p className="pl-4"><span className="text-neon-green">"ai_orchestration"</span>: "Anthropic SDK Core"</p>
+                  <p className="text-text-primary/40">{"}"}</p>
+                </div>
+                <div aria-hidden="true" className="text-right text-xs text-neon-green/60">
+                  // Drag &amp; Drop Canvas Verified
                 </div>
               </div>
-              <div aria-hidden="true" className="space-y-2 grow pt-4">
-                <p className="text-text-primary/40">{"{"}</p>
-                <p className="pl-4"><span className="text-neon-green">"identity_tier"</span>: "Google SSO via NextAuth",</p>
-                <p className="pl-4"><span className="text-neon-green">"content_tier"</span>: "Isolated Cloud Firebase",</p>
-                <p className="pl-4"><span className="text-neon-green">"ai_orchestration"</span>: "Anthropic SDK Core"</p>
-                <p className="text-text-primary/40">{"}"}</p>
-              </div>
-              <div aria-hidden="true" className="text-right text-xs text-neon-green/60">
-                // Drag &amp; Drop Canvas Verified
-              </div>
+              <a
+                href="https://ne-xt-script.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit the live NeXTScript application (opens in new tab)"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-bg-dark border border-warm-border rounded-xl text-sm font-medium text-text-secondary transition-all duration-300 hover:border-neon-pink hover:text-neon-pink group/btn"
+              >
+                View Live Site
+                <span aria-hidden="true" className="font-mono group-hover/btn:translate-x-1 transition-transform">→</span>
+              </a>
             </div>
 
           </div>
