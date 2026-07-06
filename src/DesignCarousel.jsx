@@ -18,22 +18,6 @@ const designProjects = [
     tools: ['Photoshop', 'Illustrator'],
     image: '/christmas-card.jpg',
   },
-  {
-    id: 3,
-    category: 'Interface Design',
-    title: 'Project Title',
-    description: 'Brief description of the project, the goal, and the outcome. Replace with your real project details.',
-    tools: ['Figma', 'Framer'],
-    image: null,
-  },
-  {
-    id: 4,
-    category: 'Typography',
-    title: 'Project Title',
-    description: 'Brief description of the project, the goal, and the outcome. Replace with your real project details.',
-    tools: ['Illustrator', 'InDesign'],
-    image: null,
-  },
 ];
 
 export default function DesignCarousel() {
@@ -105,7 +89,7 @@ export default function DesignCarousel() {
               <article className="bg-surface-dark border border-warm-border rounded-2xl overflow-hidden transition-all duration-300 hover:bg-surface-hover/50 group h-full flex flex-col">
 
                 {/* Image area */}
-                <div className="aspect-[4/3] bg-bg-dark border-b border-warm-border flex items-center justify-center overflow-hidden">
+                <div className="aspect-4/3 bg-bg-dark border-b border-warm-border flex items-center justify-center overflow-hidden">
                   {project.image ? (
                     <img
                       src={project.image}
