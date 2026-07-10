@@ -2,7 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="/logos/wvLightFillOutline.svg" />
+    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="/logos/wvDarkFillOutline.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logos/wvDarkFillOutline.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Windie Victoria – Learning Experience Engineer & Full-Stack Developer</title>
   </head>

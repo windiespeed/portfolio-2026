@@ -19,16 +19,28 @@
 
 @theme {
   /* Warm, neutral-dark base surfaces */
-  --color-bg-dark: #121110;        /* Deep, rich espresso-charcoal base */
-  --color-surface-dark: #1C1A18;   /* Lighter warm stone for cards */
-  --color-surface-hover: #262320;  /* Elevated warm accent surface */
-  
-  /* Super clean typography hierarchy */
-  --color-text-primary: #F4F3F1;   /* Off-white warm cream for readability */
-  --color-text-secondary: #A39E99; /* Muted stone-taupe for metadata */
-  --color-warm-border: #2D2A26;    /* Soft, low-contrast inner lines */
+  --color-bg-dark: #121110;
+  --color-surface-dark: #1C1A18;
+  --color-surface-hover: #262320;
 
-  /* High-fidelity surgical accents */
-  --color-neon-pink: #FF1493;      /* Deep electric pink */
-  --color-neon-green: #00FF66;     /* Electric spring green */
+  /* Typography hierarchy */
+  --color-text-primary: #F4F3F1;
+  --color-text-secondary: #A39E99;
+  --color-warm-border: #2D2A26;
+
+  /* Accents */
+  --color-neon-pink: #FF1493;
+  --color-neon-green: #00FF66;
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+  --color-bg-dark: #F5F3F0;
+  --color-surface-dark: #FFFFFF;
+  --color-surface-hover: #EDE9E4;
+  --color-text-primary: #1C1A18;
+  --color-text-secondary: #6B6560;
+  --color-warm-border: #D6D1CB;
+  --color-neon-pink: #CC0070;
+  --color-neon-green: #007A30;
 }

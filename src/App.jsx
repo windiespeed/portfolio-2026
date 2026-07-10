@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Projects from './Projects';
@@ -5,6 +6,15 @@ import Footer from './Footer';
 import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
+
   return (
     <div className="bg-bg-dark text-text-primary min-h-screen font-sans selection:bg-neon-pink/30 selection:text-text-primary antialiased">
 
@@ -16,7 +26,7 @@ export default function App() {
         Skip to main content
       </a>
 
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
 
       <main id="main-content" aria-label="Main content" className="max-w-6xl mx-auto px-6 relative">
 
