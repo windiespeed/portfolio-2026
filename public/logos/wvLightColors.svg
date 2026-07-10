@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 203.38 131.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        opacity: .7;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1=".56" y1="65.25" x2="202.69" y2="65.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff1493"/>
+      <stop offset=".09" stop-color="#f21f90"/>
+      <stop offset=".25" stop-color="#d03f8a"/>
+      <stop offset=".48" stop-color="#987280"/>
+      <stop offset=".75" stop-color="#4db773"/>
+      <stop offset="1" stop-color="#0f6"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <circle class="cls-3" cx="112.83" cy="113.02" r="16.31" transform="translate(-18.71 22.45) rotate(-10.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-1" points="175.08 .5 152.63 74.94 146.1 97.62 139.46 73.92 117.3 .75 117.33 .5 117.22 .5 94.04 .5 88.56 .5 92.88 13.67 87.61 73.41 85.61 93.93 80.65 75.45 69.17 36.32 49.57 36.32 38.82 75.7 34.5 93.67 32.7 73.66 25.01 .5 .56 .5 15.74 130 44.4 130 55.36 89.34 58.84 74.68 62.32 88.96 73.7 130 102.26 130 109.79 65.25 131.03 130 160.64 130 202.69 .5 175.08 .5"/>
+      <line class="cls-2" x1="88.56" y1=".5" x2="131.03" y2="130"/>
+      <g class="cls-4">
+        <image width="37" height="37" transform="translate(94.52 94.71)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsSAAALEgHS3X78AAAAvklEQVRYhe2YSw6AIAxEh97/zrgziuUzim0XfUup6cugBAASjsK+UGutVINS6B4AIcYKqc0IyWnhDqFbw0W5YdFuqbPpgly34C+pW/OBoGgPLaRmPIytpXqpqYlZ0gtCVoo8cE8M0AOR0aAnIRIDnsGEEWtJMZYUY0kxlhRjCSPWbn+kN+BNmMRaQohpsyWzAi9UEcu9Wcg9/2iG3M6Vs8/G/IoA+HgSv7JTbsvdRcsXQfaPf7U8rApGWn4SNw6utkgzTd58ygAAAABJRU5ErkJggg=="/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 203.38 131.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: url(#linear-gradient-2);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        opacity: .7;
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="65.25" x2="203.38" y2="65.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff1493"/>
+      <stop offset=".09" stop-color="#f21f90"/>
+      <stop offset=".25" stop-color="#d03f8a"/>
+      <stop offset=".48" stop-color="#987280"/>
+      <stop offset=".75" stop-color="#4db773"/>
+      <stop offset="1" stop-color="#0f6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="88.08" y1="65.25" x2="131.5" y2="65.25" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath">
+      <circle class="cls-1" cx="112.83" cy="113.02" r="16.31" transform="translate(-18.71 22.45) rotate(-10.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-3" points="175.08 .5 152.63 74.94 146.1 97.62 139.46 73.92 117.3 .75 117.33 .5 117.22 .5 94.04 .5 88.56 .5 92.88 13.67 87.61 73.41 85.61 93.93 80.65 75.45 69.17 36.32 49.57 36.32 38.82 75.7 34.5 93.67 32.7 73.66 25.01 .5 .56 .5 15.74 130 44.4 130 55.36 89.34 58.84 74.68 62.32 88.96 73.7 130 102.26 130 109.79 65.25 131.03 130 160.64 130 202.69 .5 175.08 .5"/>
+      <line class="cls-2" x1="88.56" y1=".5" x2="131.03" y2="130"/>
+      <g class="cls-4">
+        <image width="37" height="37" transform="translate(94.52 94.71)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsSAAALEgHS3X78AAAFwUlEQVRYhe2XzYssZxXGf8+prrlxI4grl6KCuEgQshVFBP0DXAhu5V4UEkFdCArhIkgkoiSD+Ik7/wGXIrgRFHTjXYibLHQRQYyLfDjTXVXnuDjnfat6pjs3k6WkoKjq7uqqp5+v8za8u/2fbLrrF37zu+diGoPDzpnG4DAG+52zH4Pr0bnaOW/unDdH5/XR+eV7L+/8jDsB+8OvvxPzGMxjMDVQO2caKWDOfudcj5HgRueN3cLrY/Cf3cI/R+dP40/e9vN2j7vg0a++m4DmIBQE4IiQcCBwQiJkBBByHOESgRFyFoxF8NT0IP4y/vRtgXtLYH/7xfOxzEGI5FbKowkUhAQyYnJC5GuzOgcH3MQCuGARTPOD+Ovu8eDOAnv58nuxzAFSBxYYKBIUEIggQAazJ0MUY7WHwCMZXQhmDezn+/GyBdjPzwI8CewfL7xQoAAFQ7EVJHuDhBNdQhQJJCLBdhkF5mkBBa5gmZyFgSstvHIXxl55+P3wKfJFk0cQBAMiP0kA7RqUvkMG8vKb4yW3YziOy3AJV/AhDbzh9+M1+9lJ1m4BG6Z2pvQUDqhYo3zmYCLkMNNlzR+Shs8jCRRLv4kCOOByPkbwx7gf6Da4I2Cvfv0HscyBNRAW/UEp5YY5BbtiLdOobvoob6WcFHslsYTP5TeMpwV/fhxjmihQmTqsfIXKay2VbAJBeagFw0vS2ABak5p7hqel9cnpQTy6USMd2Gtf+mH4XEwRJWXeoNeEoodgh7q/sAYkelITsNU1TiB803ULYpHhglnw6BxjOiRbAZhaT4GhFLCFQCnlcVpZQXUJ125by7YBTufmMXAZn9l/OX5778e6Bcxm4QYGuAKrBzaWsJXJxmJ6j3qdSdyyuHrzOKUhK0AiNCSDijOMTUIFCMtfMkjQ5NXqtZ3E0pq/ruthsC1gI+/E6jMak813JWv+8jNS0sqhrGarlG0CpNTJ6pDfTNBRUk9bSW+ktXlu8jWxG1lvAdt/+sWIA726rPzkSuG65+pLS7U/tERWz010v63ea95M7iJaSr0kpU+RW8DsAGHgUmejgYECWJ9hAosOoldLmw5Kv2leU5q14wVSxOwrq9vxdRPY+Puv6vCJF0OVOquxYbatiVVGaCXa5mm7zqrHkt2hSTA3edvIyvHlfeAbYX7aY3bQmkaradTIUAZjKMArQNV1bbWxgolahbTaaQyhtUouUHVgynoSGNd0pqKZvwCZ5XnYhjVVdSiztz54lTQgj43NdBNj9RzYZpaeYUz79E6zkSvZaOZt6wrrvqKzoU1nIdgJNAt6r+W5h9Yp0cJR/XfSYwC6qofU06U8momwCkF7TfT0Rq+OrjvZVlS/sQLZJvdoASq++NTzOgnM/v6s/IOX0Ya0KQgTqmZrIzGJ19Egb8lskyLrI4MxbNdtdWxDP0q+m/469hjAf/NmMqrBA6kdoc3t5rkqgN7ZfVR1GRrgBGtkKW+X5CFnvFGut4BpEVytfz6EEqRaz7UqAWMzQ6fY+G7do0kry+5rPqqxpTlBfu6TD29BOwb272fk738pmr/azdu3mqfaLOyrkc0SaU3jJiDQx9fqs0ykc4KujQrrG68+K/agK2F70EG15zxlApsMm4QmYbPQBJpgmIVmMSz5ntU+LGKY191mGOa8/lOffe4kspP/kiQRV9E9tUpTVUJ9pjhaw3kLTTEmU04Ca0lszOX9nv78t0/TdYoxSEklwRVwDbrOnrNiTcWWDoIDWDFnG+byPFCdWzFkczL48S986yyos4w1cABulxEWx0kF2moLy2nR2B1qrSbU/9S0RFN999H733xLUGcZO7rgX8/IrpI9XedMTb/l0Q4qv9H9Zp21lUWbxTCJj3zl8aCAM5E4s/mHL8PfE8QTQTxB7vfAL4K4AL9Yz5fR870RljH4wMNv3OlZd7q4bfOTL8UWnF8EcY8CFx3g+370tXd0/3e3d7L9D6MFa2YrBI5MAAAAAElFTkSuQmCC"/>
+      </g>
+    </g>
+  </g>
+</svg>
