@@ -7,7 +7,7 @@ const designProjects = [
     category: 'Photography',
     title: 'Birmingham, AL Sunset',
     description: 'A golden hour capture over the Birmingham skyline, color-graded in Lightroom to preserve the warmth and depth of the natural light.',
-    tools: ['Lightroom'],
+    tools: ['Lightroom', 'iPhone'],
     image: '/design/sunset.jpg',
   },
   {
