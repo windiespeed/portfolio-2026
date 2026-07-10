@@ -4,19 +4,27 @@ import useEmblaCarousel from 'embla-carousel-react';
 const designProjects = [
   {
     id: 1,
+    category: 'Photography',
+    title: 'Birmingham, AL Sunset',
+    description: 'A golden hour capture over the Birmingham skyline, color-graded in Lightroom to preserve the warmth and depth of the natural light.',
+    tools: ['Lightroom'],
+    image: '/design/sunset.jpg',
+  },
+  {
+    id: 2,
     category: 'Brand Identity',
     title: 'FORGE Fox',
     description: 'In 2021, I was tasked with creating a mascot for a Mississippi non-profit, FORGE. This is where the FORGE Fox was born. It is still used today.',
     tools: ['Procreate', 'Illustrator'],
-    image: '/forge-fox.jpg',
+    image: '/design/forge-fox.jpg',
   },
   {
-    id: 2,
+    id: 3,
     category: 'Print & Digital',
     title: 'Custom Christmas Card',
     description: 'A custom Christmas card I designed for Graham Roofing, Inc. in 2021.',
     tools: ['Photoshop', 'Illustrator'],
-    image: '/christmas-card.jpg',
+    image: '/design/christmas-card.jpg',
   },
 ];
 
