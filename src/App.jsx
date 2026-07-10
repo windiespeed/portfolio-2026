@@ -84,7 +84,7 @@ export default function App() {
 
       </main>
 
-      <Footer />
+      <Footer theme={theme} />
       <Analytics />
 
     </div>
