@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 
 const designProjects = [
@@ -49,7 +49,19 @@ export default function DesignCarousel() {
 
   const scrollSnaps = emblaApi?.scrollSnapList() ?? [];
 
+  const [lightboxImage, setLightboxImage] = useState(null);
+  const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (!lightboxImage) return;
+    closeButtonRef.current?.focus();
+    const onKey = (e) => { if (e.key === 'Escape') setLightboxImage(null); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [lightboxImage]);
+
   return (
+    <>
     <div className="mt-16">
 
       {/* Header row */}
@@ -91,11 +103,17 @@ export default function DesignCarousel() {
                 {/* Image area */}
                 <div className="aspect-4/3 bg-bg-dark border-b border-warm-border flex items-center justify-center overflow-hidden">
                   {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    <button
+                      onClick={() => setLightboxImage(project)}
+                      aria-label={`View full image: ${project.title}`}
+                      className="w-full h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-neon-pink"
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </button>
                   ) : (
                     <span aria-hidden="true" className="text-text-secondary/30 font-mono text-xs">
                       // image coming soon
@@ -149,5 +167,37 @@ export default function DesignCarousel() {
       )}
 
     </div>
+
+    {/* Lightbox modal */}
+    {lightboxImage && (
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label={lightboxImage.title}
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+        onClick={() => setLightboxImage(null)}
+      >
+        <div
+          className="relative max-w-4xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            ref={closeButtonRef}
+            onClick={() => setLightboxImage(null)}
+            aria-label="Close image"
+            className="absolute -top-10 right-0 text-text-secondary hover:text-text-primary transition-colors font-mono text-sm"
+          >
+            ✕ close
+          </button>
+          <img
+            src={lightboxImage.image}
+            alt={lightboxImage.title}
+            className="w-full h-auto max-h-[85vh] object-contain rounded-xl"
+          />
+          <p className="mt-3 text-center text-sm text-text-secondary font-mono">{lightboxImage.title}</p>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
