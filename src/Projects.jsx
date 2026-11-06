@@ -111,7 +111,7 @@ export default function Projects() {
                 </div>
                 <div aria-hidden="true" className="space-y-2 grow pt-4">
                   <p className="text-text-primary/40">{"{"}</p>
-                  <p className="pl-4"><span className="text-neon-green">"hardware"</span>: "43\" Android 13 touchscreen",</p>
+                  <p className="pl-4"><span className="text-neon-green">"hardware"</span>: "43-inch Android 13 touchscreen",</p>
                   <p className="pl-4"><span className="text-neon-green">"runtime"</span>: "Capacitor APK, fully offline",</p>
                   <p className="pl-4"><span className="text-neon-green">"content"</span>: "5 eras · 78 events · 272 Qs"</p>
                   <p className="text-text-primary/40">{"}"}</p>
