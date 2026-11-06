@@ -54,6 +54,7 @@ export default function App() {
                 <li><span aria-hidden="true">▪</span> Tailwind CSS v4 Architecture</li>
                 <li><span aria-hidden="true">▪</span> Interactive Canvas Engineering (dnd-kit)</li>
                 <li><span aria-hidden="true">▪</span> Semantic HTML5 / Responsive CSS Workspaces</li>
+                <li><span aria-hidden="true">▪</span> Capacitor Android &amp; Offline Kiosk Apps</li>
               </ul>
             </div>
 
@@ -65,6 +66,7 @@ export default function App() {
                 <li><span aria-hidden="true">▪</span> Decoupled Data Pipelines (RESTful APIs)</li>
                 <li><span aria-hidden="true">▪</span> Cloud NoSQL Schema Architecture</li>
                 <li><span aria-hidden="true">▪</span> LMS Infrastructure Governance (Google Workspace)</li>
+                <li><span aria-hidden="true">▪</span> Node.js / Express Local Content Servers</li>
               </ul>
             </div>
 
@@ -76,6 +78,7 @@ export default function App() {
                 <li><span aria-hidden="true">▪</span> Cognitive Load Mitigation Theory</li>
                 <li><span aria-hidden="true">▪</span> Instructional Scaffolding &amp; Chunking</li>
                 <li><span aria-hidden="true">▪</span> Synchronous/Asynchronous Program Mapping</li>
+                <li><span aria-hidden="true">▪</span> WCAG AA &amp; ADA Accessible Design (Automated Contrast Checks)</li>
               </ul>
             </div>
 

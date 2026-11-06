@@ -143,6 +143,20 @@ export default function Projects() {
             </div>
 
           </div>
+
+          <figure className="mt-8 relative z-10">
+            <img
+              src="/projects/infinity-kiosk-home.jpg"
+              alt="The kiosk's home screen: “The History of Spaceflight” over a rocket engine test photo, with NASA and INFINITY Science Center logos and buttons to explore the timeline, browse images, test your knowledge, open accessibility options, and learn about the exhibit."
+              width="1522"
+              height="782"
+              loading="lazy"
+              className="w-full h-auto rounded-xl border border-warm-border group-hover:border-warm-border/90 transition-colors"
+            />
+            <figcaption className="mt-3 text-xs font-mono text-text-secondary">
+              // Home screen of the 43&quot; touchscreen kiosk at INFINITY Science Center
+            </figcaption>
+          </figure>
         </div>
       )}
 
