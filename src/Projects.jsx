@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DesignCarousel from './DesignCarousel';
 
 const projects = [
+  { id: 'infinity-kiosk',   category: 'Engineering' },
   { id: 'nextscript',       category: 'Engineering' },
   { id: 'microlearning',    category: 'Engineering' },
   { id: 'lms',              category: 'Engineering' },
@@ -59,6 +60,91 @@ export default function Projects() {
           </button>
         ))}
       </div>
+
+      {/* INFINITY Science Center Kiosk */}
+      {show('infinity-kiosk') && (
+        <div className="bg-surface-dark border border-warm-border rounded-2xl p-8 md:p-12 transition-all duration-500 hover:bg-surface-hover/80 group mb-8 relative overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+            <div className="lg:col-span-7 flex flex-col justify-between h-full relative z-10">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-neon-green font-mono text-sm tracking-wide uppercase font-semibold">
+                    Museum Exhibit · Client Build
+                  </span>
+                  <span aria-hidden="true" className="h-2 w-2 rounded-full bg-neon-green shadow-[0_0_8px_#00FF66]" />
+                </div>
+                <h3 className="text-3xl font-bold text-text-primary group-hover:text-neon-pink transition-colors duration-300 mb-4">
+                  INFINITY Science Center Kiosk
+                </h3>
+                <h4 className="text-text-primary/90 font-medium text-base mb-4 leading-relaxed">
+                  Turning Decades of Spaceflight History into an Offline, Accessible Touchscreen Exhibit for NASA&apos;s Stennis Space Center Visitor Center.
+                </h4>
+                <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-4">
+                  Led a five-person Mississippi Coding Academies team as project manager and lead developer to design and ship an interactive spaceflight timeline for the INFINITY Science Center. Packaged the React app as a Capacitor Android build so a 43&quot; touchscreen runs fully offline, with PIN-protected admin editors and backup/restore that let museum staff manage eras, events, media and quizzes on their own.
+                </p>
+                <p className="text-text-secondary text-sm md:text-base leading-relaxed mb-6">
+                  Accessibility was a build requirement, not a polish pass: WCAG AA contrast checks gate every build, controls sit in the ADA reach range, every gesture has a button alternative, and visitors can turn on read-aloud, larger text and high contrast. Finishing a quiz earns a QR code certificate visitors claim on their own phones.
+                </p>
+              </div>
+              <ul aria-label="Tech stack" className="flex flex-wrap gap-2 mt-2 list-none">
+                {['React 19', 'Vite', 'Tailwind v4', 'Capacitor (Android)', 'Zustand', 'Node / Express', 'WCAG AA'].map((tech) => (
+                  <li key={tech} className="bg-bg-dark text-text-secondary text-xs font-mono px-3 py-1.5 rounded-md border border-warm-border/60 group-hover:border-warm-border transition-colors">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="lg:col-span-5 flex flex-col gap-4">
+              <div
+                role="img"
+                aria-label="Kiosk overview: a 43-inch Android 13 touchscreen running offline, with 5 eras, 78 events and 272 quiz questions, installed November 2026"
+                className="bg-bg-dark border border-warm-border rounded-xl p-6 h-64 flex flex-col justify-between font-mono text-xs text-text-secondary group-hover:border-warm-border/90 transition-colors"
+              >
+                <div aria-hidden="true" className="flex justify-between items-center border-b border-warm-border pb-3">
+                  <span className="text-neon-pink">kiosk_deployment.json</span>
+                  <div className="flex gap-1">
+                    <div className="w-2 h-2 rounded-full bg-warm-border" />
+                    <div className="w-2 h-2 rounded-full bg-warm-border" />
+                  </div>
+                </div>
+                <div aria-hidden="true" className="space-y-2 grow pt-4">
+                  <p className="text-text-primary/40">{"{"}</p>
+                  <p className="pl-4"><span className="text-neon-green">"hardware"</span>: "43\" Android 13 touchscreen",</p>
+                  <p className="pl-4"><span className="text-neon-green">"runtime"</span>: "Capacitor APK, fully offline",</p>
+                  <p className="pl-4"><span className="text-neon-green">"content"</span>: "5 eras · 78 events · 272 Qs"</p>
+                  <p className="text-text-primary/40">{"}"}</p>
+                </div>
+                <div aria-hidden="true" className="text-right text-xs text-neon-green/60">
+                  // Installed Nov 2026
+                </div>
+              </div>
+              <a
+                href="https://mscoding.org/ISCProject"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit the INFINITY Science Center Kiosk project page (opens in new tab)"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-bg-dark border border-warm-border rounded-xl text-sm font-medium text-text-secondary transition-all duration-300 hover:border-neon-pink hover:text-neon-pink group/btn"
+              >
+                View Project Page
+                <span aria-hidden="true" className="font-mono group-hover/btn:translate-x-1 transition-transform">→</span>
+              </a>
+              <a
+                href="https://windiespeed.github.io/infinity-kiosk/timeline"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Explore the kiosk's interactive timeline preview (opens in new tab)"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-bg-dark border border-warm-border rounded-xl text-sm font-medium text-text-secondary transition-all duration-300 hover:border-neon-pink hover:text-neon-pink group/btn"
+              >
+                Explore the Timeline
+                <span aria-hidden="true" className="font-mono group-hover/btn:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
 
       {/* NeXTScript */}
       {show('nextscript') && (
